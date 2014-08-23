@@ -6,6 +6,8 @@ class ProjectsController < ApplicationController
   end
 
   def create
+    @project = Project.new()
+    @Project.save
   end
 
   def show
