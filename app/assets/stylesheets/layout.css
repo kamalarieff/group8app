@@ -1,0 +1,154 @@
+@import url(forms.css);
+@import url(data:application/octet-stream;base64,LmxvZ2luIHsKICAJd2lkdGg6IDMwMHB4OwogIAltYXJnaW46IGF1dG87CiAgCW1hcmdpbi10b3A6NDBweDsKICAJYm9yZGVyOiAwOwogCXBhZGRpbmc6IDA7CiAgCWJhY2tncm91bmQtY29sb3I6IG5vbmU7Cgl9Cgojc2lnbl9pbiB7Cgl3aWR0aDoxMDAlOwoJYmFja2dyb3VuZDogI2ZmZjsKCXBhZGRpbmc6IDIwcHggMzBweDsKCWJveC1zaGFkb3c6IAogICAgICAgIDBweCAwcHggMHB4IDRweCByZ2JhKDI1NSwyNTUsMjU1LDAuNSApLCAKICAgICAgICAwcHggNHB4IDIwcHggcmdiYSggMCwwLDAsMC40ICk7CiAgCWJvcmRlci1yYWRpdXM6IDNweDsKCX0KCiNzaWduX2luIC50aXRsZSBoMyB7CiAgICBjb2xvcjogIzU1NTU1NTsKICAgIGZvbnQtc2l6ZTogMjVweDsKICAgIG1hcmdpbi10b3A6IDIwcHg7Cgl9Cgojc2lnbl9pbiAuaW5wdXRzICNzZXBhcmF0b3IgewoJYmFja2dyb3VuZC1jb2xvcjogbm9uZTsKCWNvbG9yOiAjODM4MDgwOwoJdGV4dC1hbGlnbjogY2VudGVyOwoJfQoKI3NpZ25faW4gLmlucHV0cyBpbnB1dCB7Cgl3aWR0aDogOTMlOwogICAgYmFja2dyb3VuZDogI2Y2ZjZmNjsKICAgIGNvbG9yOiAjNTU1NTU1OwogICAgcGFkZGluZzogMTJweCAxMnB4OwogICAgYm9yZGVyLXJhZGl1czogM3B4OwogICAJYm94LXNoYWRvdzogaW5zZXQgMHB4IDJweCAycHggcmdiYSggMCwwLDAsMC4xICk7CiAgIAltYXJnaW4tdG9wOiAxMHB4OwogICAJbWFyZ2luLWJvdHRvbTogMTBweDsKICAgCW91dGxpbmU6MDsKICAgIGJvcmRlcjowOwoJfQoKI3NpZ25faW4gLmlucHV0cyBpbnB1dFt0eXBlPXRleHRdOmZvY3VzLCAjc2lnbl9pbiAuaW5wdXRzIGlucHV0W3R5cGU9cGFzc3dvcmRdOmZvY3VzIHsKICAgIGJhY2tncm91bmQ6ICNmZmY7CiAgICBib3gtc2hhZG93OiAwcHggMHB4IDFweCAzcHggcmdiYSgxMjIsMTUzLDI2LCAwLjQpOwoJfQoKI3NpZ25faW4gLnN1Ym1pdCB7Cgl3aWR0aDogMTAwJTsKCW1hcmdpbi10b3A6IDIwcHg7CgltYXJnaW4tYm90dG9tOiA1MHB4OwoJfQkKCiNzaWduX2luIC5zdWJtaXQgYTpsaW5rLCBhOnZpc2l0ZWQgewoJd2lkdGg6IDQ1JTsKCXBhZGRpbmc6IDVweDsKCWRpc3BsYXk6IGJsb2NrOwoJZmxvYXQ6IGxlZnQ7CgltYXJnaW4tcmlnaHQ6IDRweDsKCWNvbG9yOiAjQjBBQkFCOwogICAgYmFja2dyb3VuZC1jb2xvcjogIzMzMzMzMzsKICAgIHRleHQtYWxpZ246IGNlbnRlcjsKICAgIGJvcmRlci1yYWRpdXM6IDNweDsKICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKCX0KCiNzaWduX2luIC5zdWJtaXQgYTpob3ZlciB7CgliYWNrZ3JvdW5kLWNvbG9yOiAjN0E5OTFBOwkKCWNvbG9yOiMzMzMzMzM7Cgl9CgkKI3NpZ25faW4gLnN1Ym1pdCBhOmFjdGl2ZSB7CgliYWNrZ3JvdW5kLWNvbG9yOiAjQUJEQTBGOwoJfQkKCgoKCg==);
+/*------------------------------------------------- Initial setup---------------------------------*/
+body{margin:0; padding:0; font-size:13px; color: black; font-family:Georgia, "Times New Roman", Times, serif; background-color: #E6E6E6; }
+a { outline:none; text-decoration:none;}
+img {margin:0; padding:0; border:none; width:100%; height:100%;}
+
+/*------------------------------------------------- Conmon styles---------------------------------*/
+.flex_height:after{content:" "; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.justify {text-align: justify;}
+.to_left{float:left;}
+.to_right{float:right;}
+.margin_left{margin-left: 100px;}
+.margin_right{margin-right: 100px;}
+.shadow{ box-shadow: 0px 0px 10px #888888; background-color:white;}
+.button {
+	margin: 0;
+	display: block;
+	}
+.button ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+.button li {
+	float: left;
+	padding: 2px;
+}	
+.button a:link, a:visited {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    color: #B0ABAB;
+    background-color: #333333;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+	}
+.button a:hover{
+    background-color: #7A991A;
+    color:#000;
+	}
+.button a:active {
+    background-color: #ABDA0F;
+    }
+
+div.wrapper h1 {	
+	margin:0;
+	padding:0;
+	font-size:25px;
+	font-weight:normal;
+	}
+
+
+.subheading {
+	width: 300px;
+}
+
+.subheading h2 {
+	font-size: 25px;
+}
+
+.subheading h3 {
+	font-size: 20px;
+	display: inline;
+}
+
+.main {
+	padding-top: 10px;
+	margin: auto;
+	width: 90%;
+	clear: both;
+	text-align: center;
+}
+
+.pic {
+	height: 180px;
+	width: 320px;
+	margin: 5% 5% 5% 5%;
+}
+
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+.wrapper{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	}
+
+/* -------------------------------------------Specific Wrappers-------------------------------------*/
+.banner{
+	color:#F2EEEE; 
+	background-color:#191919; 
+	border-top:10px solid #7A991A;
+	}
+
+.navigation{
+	background:#202020;/*linear-gradient(#56585D, #2F3034) repeat scroll 0% 0% transparent;*/
+	color:#F2EEEE;
+	}
+
+.gallery{
+	background-color:none;
+	}
+
+.content{
+	color:#F2EEEE; 
+	background-color:none;
+	text-indent: 50px;
+	}
+
+.footer{
+	color:#F2EEEE;
+	background-color:#191919;
+	}
+
+/* ----------------------------------------------General-------------------------------------*/
+#top_bar, #navi, #slides, #news {
+	margin: auto;
+	width:70%;	
+	}
+
+#top_bar, #navi {
+	padding:10px ;
+	}
+
+/* ----------------------------------------------Navi bar-------------------------------------*/
+#menu {
+	margin-left: 30px;
+	}
+
+/* ------------------------------------ Slides ----------------------------------------------*/
+#slides {
+	margin-top: 12px;
+	}		
+
+/* ------------------------------------ Content ----------------------------------------------*/
+#news {
+	background-color: #fff;
+	color: #000;
+	min-height: 500px;
+}
+#news p {
+	padding: 20px;
+}
+/* ------------------------------------ Submit ---------------------------------------------- */
+#submit {
+	position: fixed;
+	top: 164px;
+	right: 75px;
+	height: 500px;
+}
