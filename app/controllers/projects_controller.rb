@@ -1,13 +1,13 @@
 class ProjectsController < ApplicationController
   def index
+    @projects = Project.all
   end
 
   def new
   end
 
   def create
-    @project = Project.new()
-    @Project.save
+    project = Project.create(:title => "Ruby on Rails Project", :group_name => "Group 8")
   end
 
   def show

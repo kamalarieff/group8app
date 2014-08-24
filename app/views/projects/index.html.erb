@@ -1,2 +1,10 @@
 <h1>Home</h1>
 <p>Find me in app/views/projects/index.html.erb</p>
+
+<table>
+	<% @projects.each do |project| %>
+	<tr>
+		<td><%= puts project %></td>
+	</tr>
+	<% end %>
+</table>
