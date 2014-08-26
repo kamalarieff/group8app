@@ -1,4 +1,8 @@
 <h1>Submit a new project</h1>
-<p>Find me in app/views/projects/new.html.erb
-
-<%= button_to "Create", action: :create %></p>
+<p>
+<%= form_tag(action: :create, method: "get") do %>
+	Project name: <%= text_field_tag(:name)%>
+	Group name: <%= text_field_tag(:group)%>
+	<%= button_to "Create", action: :create %>
+<% end %>
+</p>

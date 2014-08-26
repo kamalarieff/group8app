@@ -1,4 +1,4 @@
 class Project < ActiveRecord::Base
-	validates :title, presence: true
-	validates :group_name, presence: true
+	validates :name, presence: true
+	validates :group, presence: true
 end

@@ -7,7 +7,13 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    project = Project.create(:title => "Ruby on Rails Project", :group_name => "Group 8")
+    # @project = Project.create(params[:name])
+    # @project = Project.create(params[:group])
+    @project = Project.new
+    @project.name = params[:name]
+    @project.group = params[:group]
+    @project.save
+
   end
 
   def show
